@@ -1,0 +1,9 @@
+co\edu\poli\examen3\modelo\Taller.class
+co\edu\poli\examen3\modelo\ActividadAcademica.class
+co\edu\poli\examen3\modelo\RecursoExterno.class
+co\edu\poli\examen3\controlador\formulario.class
+module-info.class
+co\edu\poli\examen3\servicios\ImplementacionOperacion.class
+co\edu\poli\examen3\modelo\Clase.class
+co\edu\poli\examen3\servicios\Operacion.class
+co\edu\poli\examen3\vista\App.class

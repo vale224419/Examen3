@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.poli.examen3.controlador.formulario">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="bttguardar" mnemonicParsing="false" onAction="#Serializar" text="Guardar" />
+            <Button fx:id="bttabrir" mnemonicParsing="false" onAction="#deserializar" text="Abrir" />
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="450.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="boxtipo" layoutX="30.0" layoutY="280.0" prefWidth="240.0" />
+            <Label layoutX="45.0" layoutY="23.0" text="Registro de actividades">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="60.0" prefHeight="17.0" prefWidth="74.0" text="ID:">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="110.0" prefHeight="17.0" prefWidth="74.0" text="Nombre:">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="160.0" prefHeight="17.0" prefWidth="74.0" text="Fecha:">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="210.0" prefHeight="17.0" prefWidth="129.0" text="Duracion en horas:">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="260.0" prefHeight="17.0" prefWidth="129.0" text="Tipo:">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtid" layoutX="30.0" layoutY="80.0" prefHeight="25.0" prefWidth="240.0" />
+            <TextField fx:id="txtnombre" layoutX="30.0" layoutY="130.0" prefWidth="240.0" />
+            <DatePicker fx:id="fecha" layoutX="30.0" layoutY="180.0" prefHeight="25.0" prefWidth="240.0" />
+            <Spinner fx:id="spinnerhoras" layoutX="30.0" layoutY="230.0" prefWidth="240.0" />
+            <SplitMenuButton layoutX="111.0" layoutY="325.0" mnemonicParsing="false" text="Acción ">
+              <items>
+                <MenuItem fx:id="crrear" mnemonicParsing="false" onAction="#Create" text="Crear" />
+                  <MenuItem fx:id="leerporid" mnemonicParsing="false" onAction="#Read" text="Leer por id" />
+                  <MenuItem fx:id="leertodos" mnemonicParsing="false" onAction="#ReadAll" text="Leer todos" />
+                <MenuItem fx:id="actualizar" mnemonicParsing="false" onAction="#Update" text="Actualizar" />
+                  <MenuItem fx:id="borrar" mnemonicParsing="false" onAction="#Delete" text="Eliminar" />
+              </items>
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </SplitMenuButton>
+            <TextArea fx:id="mostrar" layoutX="30.0" layoutY="360.0" prefHeight="39.0" prefWidth="240.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </center>
+</BorderPane>

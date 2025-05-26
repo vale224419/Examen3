@@ -1,0 +1,49 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+@argfile
+--class-path
+'C:/Users/julip/.m2/repository/org/openjfx/javafx-controls/13/javafx-controls-13.jar;C:/Users/julip/.m2/repository/org/openjfx/javafx-graphics/13/javafx-graphics-13.jar;C:/Users/julip/.m2/repository/org/openjfx/javafx-base/13/javafx-base-13.jar;C:/Users/julip/.m2/repository/org/openjfx/javafx-fxml/13/javafx-fxml-13.jar'
+--module-path
+'C:/Users/julip/OneDrive/Escritorio/vale/Proyectos/S2C3/Examen3/target/classes;C:/Users/julip/.m2/repository/org/openjfx/javafx-controls/13/javafx-controls-13-win.jar;C:/Users/julip/.m2/repository/org/openjfx/javafx-base/13/javafx-base-13-win.jar;C:/Users/julip/.m2/repository/org/openjfx/javafx-graphics/13/javafx-graphics-13-win.jar;C:/Users/julip/.m2/repository/org/openjfx/javafx-fxml/13/javafx-fxml-13-win.jar'
+--patch-module
+co.edu.poli.examen3='C:/Users/julip/OneDrive/Escritorio/vale/Proyectos/S2C3/Examen3/src/main/java'
+-encoding
+'UTF-8'
+-protected
+-source
+'22'
+--module-source-path
+'C:/Users/julip/OneDrive/Escritorio/vale/Proyectos/S2C3/Examen3/target/reports/apidocs/src'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/julip/OneDrive/Escritorio/vale/Proyectos/S2C3/Examen3/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Examen3 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Examen3 1.0-SNAPSHOT API'
+co.edu.poli.examen3.controlador
+co.edu.poli.examen3.vista
+'C:/Users/julip/OneDrive/Escritorio/vale/Proyectos/S2C3/Examen3/src/main/java/module-info.java'
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\allclasses-index.html = 1748295738889
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\allpackages-index.html = 1748295738899
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\element-list = 1748295738525
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\help-doc.html = 1748295739023
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\index-all.html = 1748295738981
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\index.html = 1748295739010
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\member-search-index.js = 1748295738935
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\module-search-index.js = 1748295738913
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\overview-tree.html = 1748295738836
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\package-search-index.js = 1748295738926
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\search.html = 1748295738991
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\tag-search-index.js = 1748295738940
+C:\Users\julip\OneDrive\Escritorio\vale\Proyectos\S2C3\Examen3\target\reports\apidocs\type-search-index.js = 1748295738930
