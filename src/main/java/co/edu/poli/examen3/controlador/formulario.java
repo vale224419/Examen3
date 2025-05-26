@@ -19,19 +19,32 @@ public class formulario {
     private ImplementacionOperacion servicio;
 
     // Elementos de la interfaz conectados mediante @FXML
-    @FXML private MenuItem actualizar;
-    @FXML private MenuItem borrar;
-    @FXML private ComboBox<String> boxtipo;
-    @FXML private Button bttabrir;
-    @FXML private Button bttguardar;
-    @FXML private MenuItem crrear;
-    @FXML private DatePicker fecha;
-    @FXML private MenuItem leerporid;
-    @FXML private MenuItem leertodos;
-    @FXML private TextArea mostrar;
-    @FXML private Spinner<Integer> spinnerhoras;
-    @FXML private TextField txtid;
-    @FXML private TextField txtnombre;
+    @FXML
+    private MenuItem actualizar;
+    @FXML
+    private MenuItem borrar;
+    @FXML
+    private ComboBox<String> boxtipo;
+    @FXML
+    private Button bttabrir;
+    @FXML
+    private Button bttguardar;
+    @FXML
+    private MenuItem crrear;
+    @FXML
+    private DatePicker fecha;
+    @FXML
+    private MenuItem leerporid;
+    @FXML
+    private MenuItem leertodos;
+    @FXML
+    private TextArea mostrar;
+    @FXML
+    private Spinner<Integer> spinnerhoras;
+    @FXML
+    private TextField txtid;
+    @FXML
+    private TextField txtnombre;
 
     // Método que se ejecuta al iniciar el formulario
     @FXML
@@ -41,8 +54,6 @@ public class formulario {
         // Configura opciones del ComboBox y valores por defecto
         boxtipo.getItems().addAll("Clase", "Taller");
         spinnerhoras.setValueFactory(new IntegerSpinnerValueFactory(1, 100, 2));
-        fecha.setValue(LocalDate.now());
-
         // Limpia campos
         mostrar.clear();
         txtid.clear();
@@ -74,10 +85,13 @@ public class formulario {
 
             // Crea el objeto según el tipo seleccionado
             ActividadAcademica nueva = switch (tipo) {
-                case "Clase" -> new Clase(id, nombre, fechaSel.toString(), horas, 1);
-                case "Taller" -> new Taller(id, nombre, fechaSel.toString(), horas, "Avanzado",
-                        new RecursoExterno(1, "Proyector", "HP"));
-                default -> null;
+                case "Clase" ->
+                    new Clase(id, nombre, fechaSel.toString(), horas, 1);
+                case "Taller" ->
+                    new Taller(id, nombre, fechaSel.toString(), horas, "Avanzado",
+                    new RecursoExterno(1, "Proyector", "HP"));
+                default ->
+                    null;
             };
 
             if (nueva == null) {
@@ -151,10 +165,13 @@ public class formulario {
 
             // Crea nueva instancia con los datos actualizados
             ActividadAcademica nueva = switch (tipo) {
-                case "Clase" -> new Clase(id, nombre, fechaSel.toString(), horas, 1);
-                case "Taller" -> new Taller(id, nombre, fechaSel.toString(), horas, "Intermedio",
-                        new RecursoExterno(2, "Tablero Digital", "SmartTech"));
-                default -> null;
+                case "Clase" ->
+                    new Clase(id, nombre, fechaSel.toString(), horas, 1);
+                case "Taller" ->
+                    new Taller(id, nombre, fechaSel.toString(), horas, "Intermedio",
+                    new RecursoExterno(2, "Tablero Digital", "SmartTech"));
+                default ->
+                    null;
             };
 
             // Llama al servicio para actualizar
