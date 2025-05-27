@@ -7,7 +7,7 @@ import java.io.*;
  * Implementación de la interfaz Operacion para realizar operaciones sobre
  * actividades académicas.
  */
-public class ImplementacionOperacion implements Operacion {
+public class ImplementacionOperacion implements Operacion, OperacionSerializacion{
 
     private ActividadAcademica[] actividades = new ActividadAcademica[10];
 
@@ -120,7 +120,7 @@ public class ImplementacionOperacion implements Operacion {
     public ActividadAcademica[] deserializar(String path, String name) {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(path + "/" + name))) {
             ActividadAcademica[] recuperadas = (ActividadAcademica[]) ois.readObject();
-            this.actividades = recuperadas; // 👈 Esto es clave
+            this.actividades = recuperadas;
             return recuperadas;
         } catch (Exception e) {
             e.printStackTrace();
